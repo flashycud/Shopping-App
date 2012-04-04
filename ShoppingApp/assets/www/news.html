@@ -9,12 +9,34 @@
 	<script type="text/javascript" src="js/framework/jquery.mobile-1.0.1.min.js"></script>
 	<link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css"></link>
 	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" href="css/main.theme.css"></link>
 </head> 
 <body>
 <div data-role="page" id="news">
-	<div data-role="content">
-		
+	<div data-role="content" style="height:100%">
+		<div class="news-holder">
+			<div class="img-holder stretch"/>
+			<div class="caption-holder">
+				<div class="caption"/>
+			</div>
+		</div>
 	</div><!-- /content -->
+
+<script type="text/javascript">
+$( '#news' ).live( 'pageinit',function(event){
+	$('.news-holder .img-holder',this).css({
+		'background-image':'url("img/test.jpg")',
+		'background-size':'100% auto',
+		'background-repeat':'no-repeat',
+		'background-position-y':'30%',
+		'background-position-x':'50%'
+	});
+	$('.news-holder .caption-holder',this).css({
+		'bottom':0
+	});
+	$('.news-holder .caption',this).html('Starbucks');
+});
+</script>
 </div>
 </body>
 </html>
