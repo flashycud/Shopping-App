@@ -118,8 +118,8 @@
 	background-image: none;
 }
 #shop .data-role-content{
-	margin-top:42px;
-	padding-bottom:64px;
+	top:42px;
+	bottom:64px;
 }
 /* GLOBAL*/
 ul{
