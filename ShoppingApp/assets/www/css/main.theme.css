@@ -1,0 +1,214 @@
+#news{
+	background:#F0F0F0;	
+}
+#news .news-holder{
+	height: 55%;
+	overflow: hidden;
+	position:relative;
+}
+#news .news-holder .img-holder{
+}
+#news .news-holder .caption-holder{
+	width: 100%;
+	height: 30%;
+	background-color: rgba(0,0,0,0.6);
+	bottom:-30%;
+	position:absolute;
+	transition:bottom 1s;
+	-moz-transition:bottom 1s; /* Firefox 4 */
+	-webkit-transition:bottom 1s; /* Safari and Chrome */
+	-o-transition:bottom 1s; /* Opera */
+}
+#news .news-holder .caption{
+	color: #FFF;
+	text-shadow:#000;
+	font-size: 30px;
+	padding:10px;
+}
+#news .menu-holder{
+	height: 45%;
+	overflow: hidden;
+	position: absolute;
+	left:0;
+	right:0;
+	/*border: 1px solid #111;*/
+	background: #333;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0 1px 1px black;
+	background-image: -webkit-gradient(linear, left top, left bottom, from( #4F4F4F ), to( #2D2D2D ));
+	background-image: -webkit-linear-gradient( #4F4F4F , #2D2D2D );
+	background-image: -moz-linear-gradient( #4F4F4F , #2D2D2D );
+	background-image: -ms-linear-gradient( #4F4F4F , #2D2D2D );
+	background-image: -o-linear-gradient( #4F4F4F , #2D2D2D );
+	background-image: linear-gradient( #4F4F4F , #2D2D2D );
+	/*-moz-box-shadow:    inset 0px 3px 5px 6px #000;*/
+	/*-webkit-box-shadow: inset 3px 3px 5px 6px #000;*/
+  	box-shadow:         inset 0px 2px 5px 0px #111;
+}
+#news .row-1,#news .row-2{
+	height: 45%;
+	padding:0 5%;
+}
+#news .row-1{
+	padding-top:5%;
+}
+#news .button{
+	width: 33.33333%;
+	height: 100%; 
+	position:relative;
+	float:left;
+}
+#news .button .icon{
+	height:70%;
+}
+#news .button .icon-desc{
+	height:30%;
+	text-align:center;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0 1px 1px black;
+	text-decoration: none;
+	line-height:200%;
+	text-shadow:none;
+}
+
+#shop .content-holder{
+	background-color:#fff;
+	margin:20px;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	border-radius: 1em;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+	border:1px solid #333;
+}
+#shop .img-holder{
+	-moz-border-radius: 1em 1em 0 0;
+	-webkit-border-radius: 1em 1em 0 0;
+	border-radius: 1em 1em 0 0;
+	height:200px;
+	overflow:hidden;
+	position: relative;
+	border-bottom:1px solid #333;
+}
+#shop .img-holder img{
+	position:absolute;
+}
+#shop .text-holder{
+	padding:10px;
+}
+#shop .text-holder h1{
+	margin:0;
+}
+#shop .text-holder h3{
+	margin:0 0 5px 0;
+	color:#555;
+}
+#shop .text-holder h4{
+	margin:15px 0 0 0;
+	color:#555;
+}
+#shop .text-holder p{
+	margin:5px 0 0 0;
+	color:#555;
+}
+#shop{
+	background-image: none;
+}
+#shop .data-role-content{
+	margin-top:42px;
+	padding-bottom:64px;
+}
+/* GLOBAL*/
+ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+a,a:hover,a:visited,a:active{
+	text-decoration:none;
+}
+.icon-fav{
+	background-image:url(images/icons/fav.png);
+}
+.icon-drink{
+	background-image:url(images/icons/drink.png);
+}
+.icon-food{
+	background-image:url(images/icons/food.png);
+}
+.icon-label{
+	background-image:url(images/icons/label.png);
+}
+.icon-list{
+	background-image:url(images/icons/list.png);
+}
+.icon-tag{
+	background-image:url(images/icons/tag.png);
+}
+.icon-map .ui-icon{
+	background-image:url(images/icons/map.png);
+}
+.icon-cart .ui-icon{
+	background-image:url(images/icons/cart.png);
+}
+.icon-notepad .ui-icon{
+	background-image:url(images/icons/notepad.png);
+}
+.bg-center{
+	background-repeat:no-repeat;
+	background-position:50% 50%;
+	background-size:100%;
+}
+.button{
+	display:block;
+}
+.hidden{
+	display:none;
+}
+
+/* OVERIDING */
+.ui-page{
+	height:100%;
+}
+.ui-content{
+	padding:0;
+}
+.ui-content .ui-listview{
+	margin:0;
+}
+
+.custom .ui-btn .ui-btn-inner {
+	padding-top: 40px !important;
+}
+.custom .ui-icon{
+	width: 30px!important;
+	height: 30px!important;
+	margin-left: -15px !important;
+	box-shadow: none!important;
+	-moz-box-shadow: none!important;
+	-webkit-box-shadow: none!important;
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+	background-color:transparent !important;
+	background-position:50% 50%;
+}
+
+/* */
+.stretch{
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+}
+body{
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
