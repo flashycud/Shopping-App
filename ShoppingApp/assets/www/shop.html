@@ -103,35 +103,6 @@
 			</ul>
 		</div>		
 	</div>
-	<script type="text/javascript">
-		$("[data-role=footer],[data-role=header]").fixedtoolbar({ tapToggle: false });
-		$('#shop .img-holder').css({
-			'background-image':'url("img/test.jpg")',
-			'background-size':'100% auto',
-			'background-repeat':'no-repeat',
-			'background-position-y':'30%',
-			'background-position-x':'50%'
-		});
-		$('#shop .about-btn').click(function(){
-			$('#shop [data-role=content] .content').addClass('hidden');	
-			$('#shop [data-role=content] .about').removeClass('hidden');	
-		});
-		
-		$('#shop .product-btn').click(function(){
-			$('#shop [data-role=content] .content').addClass('hidden');	
-			$('#shop [data-role=content] .product').removeClass('hidden');
-		});
-
-		$('#shop .location-btn').click(function(){
-			$('#shop [data-role=content] .content').addClass('hidden');	
-			$('#shop [data-role=content] .location').removeClass('hidden');
-
-			$('.map_canvas').gmap().bind('init', function(ev, map) {
-				$('.map_canvas').gmap('addMarker', {'position': '13.745013,100.532144', 'bounds': true});
-			});
-		});
-
-	</script>
 </div>
 </body>
 </html>

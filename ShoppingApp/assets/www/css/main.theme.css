@@ -1,5 +1,5 @@
 #news{
-	background:#F0F0F0;	
+	background:#000;	
 }
 #news .news-holder{
 	height: 55%;
@@ -46,15 +46,42 @@
 	/*-webkit-box-shadow: inset 3px 3px 5px 6px #000;*/
   	box-shadow:         inset 0px 2px 5px 0px #111;
 }
+#news .menu-holder .row-1 .button{
+	padding-top:5%;
+	width: 34%;
+}
+#news .menu-holder .row-2 .button{
+	padding-top:3%;
+	padding-bottom:2%;
+	width: 34%;
+}
+#news .menu-holder .button:first-child{
+	padding-left:3%;
+	width: 30%;
+}
+#news .menu-holder .button:last-child{
+	padding-right:3%;
+	width: 30%;
+}
 #news .row-1,#news .row-2{
 	height: 45%;
-	padding:0 5%;
+	padding:0;
 }
-#news .row-1{
+/*#news .row-1{
 	padding-top:5%;
+}*/
+#news .button.btn-down{
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#202020),to(#2C2C2C));
+	background-image: -webkit-linear-gradient(#202020,#2C2C2C);
+	background-image: -moz-linear-gradient(#202020,#2C2C2C);
+	background-image: -ms-linear-gradient(#202020,#2C2C2C);
+	background-image: -o-linear-gradient(#202020,#2C2C2C);
+	background-image: linear-gradient(#202020,#2C2C2C);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	margin-bottom: -1px;
 }
 #news .button{
-	width: 33.33333%;
+	/*width: 32%;*/
 	height: 100%; 
 	position:relative;
 	float:left;
@@ -160,7 +187,7 @@ a,a:hover,a:visited,a:active{
 .bg-center{
 	background-repeat:no-repeat;
 	background-position:50% 50%;
-	background-size:100%;
+	background-size:auto 120%;
 }
 .button{
 	display:block;

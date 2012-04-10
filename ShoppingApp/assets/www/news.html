@@ -58,25 +58,6 @@
 			<ul>
 		</div> -->
 	</div><!-- /content -->
-
-	<script type="text/javascript">
-	$( '#news' ).live( 'pageinit',function(event){
-
-		// TODO - Change to query and position random
-		$('.news-holder .img-holder',this).css({
-			'background-image':'url("img/test.jpg")',
-			'background-size':'100% auto',
-			'background-repeat':'no-repeat',
-			'background-position-y':'30%',
-			'background-position-x':'50%'
-		});
-		setTimeout(function(){
-			$('#news .news-holder .caption-holder').css({'bottom':0});
-		},500);
-		
-		$('.news-holder .caption',this).html('Starbucks');
-	});
-	</script>
 </div>
 </body>
 </html>
