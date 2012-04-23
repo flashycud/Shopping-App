@@ -13,7 +13,7 @@ Ext.define('ShopApp.view.MainTab',{
 			{
 				xtype: 'mappage',
 				title: 'Map',
-				iconCls: 'map'
+				iconCls: 'nav'
 			},
 			{
 				xtype: 'favpage',
@@ -21,9 +21,9 @@ Ext.define('ShopApp.view.MainTab',{
 				iconCls: 'fav'	
 			},
 			{
-				xtype: 'promopage',
-				title: 'Deals',
-				iconCls: 'promo'	
+				xtype: 'shopspage',
+				title: 'Shops',
+				iconCls: 'shop'	
 			}
 		],
 		layout: {

@@ -12,21 +12,70 @@ Ext.define('ShopApp.view.page.Home', {
 					{
 						xtype: 'button',
 						docked: 'left',
-						text: 'Left'
+						action: 'left',
+						iconCls: 'fav'
 					},
 					{
 						xtype: 'button',
 						docked: 'right',
-						text: 'Right'
+						action: 'right',
+						iconCls: 'list'
 					}
-				]
+				],
+
+				// Styling
+				ui: 'header'
 			},
 			{
 				xtype: 'dataview',
-				fullscreen: true,
-			    store: {
+				style:'background:#000;color:#fff',
+				  store: {
 			        fields: ['name', 'age'],
 			        data: [
+			            {name: 'Jamie',  age: 100},
+			            {name: 'Rob',   age: 21},
+			            {name: 'Tommy', age: 24},
+			            {name: 'Jacky', age: 24},
+			            {name: 'Jamie',  age: 100},
+			            {name: 'Rob',   age: 21},
+			            {name: 'Tommy', age: 24},
+			            {name: 'Jacky', age: 24},
+			            {name: 'Jamie',  age: 100},
+			            {name: 'Rob',   age: 21},
+			            {name: 'Tommy', age: 24},
+			            {name: 'Jacky', age: 24},
+			            {name: 'Jamie',  age: 100},
+			            {name: 'Rob',   age: 21},
+			            {name: 'Tommy', age: 24},
+			            {name: 'Jacky', age: 24},
+			            {name: 'Jamie',  age: 100},
+			            {name: 'Rob',   age: 21},
+			            {name: 'Tommy', age: 24},
+			            {name: 'Jacky', age: 24},
+			            {name: 'Jamie',  age: 100},
+			            {name: 'Rob',   age: 21},
+			            {name: 'Tommy', age: 24},
+			            {name: 'Jacky', age: 24},
+			            {name: 'Jamie',  age: 100},
+			            {name: 'Rob',   age: 21},
+			            {name: 'Tommy', age: 24},
+			            {name: 'Jacky', age: 24},
+			            {name: 'Jamie',  age: 100},
+			            {name: 'Rob',   age: 21},
+			            {name: 'Tommy', age: 24},
+			            {name: 'Jacky', age: 24},
+			            {name: 'Jamie',  age: 100},
+			            {name: 'Rob',   age: 21},
+			            {name: 'Tommy', age: 24},
+			            {name: 'Jacky', age: 24},
+			            {name: 'Jamie',  age: 100},
+			            {name: 'Rob',   age: 21},
+			            {name: 'Tommy', age: 24},
+			            {name: 'Jacky', age: 24},
+			            {name: 'Jamie',  age: 100},
+			            {name: 'Rob',   age: 21},
+			            {name: 'Tommy', age: 24},
+			            {name: 'Jacky', age: 24},
 			            {name: 'Jamie',  age: 100},
 			            {name: 'Rob',   age: 21},
 			            {name: 'Tommy', age: 24},

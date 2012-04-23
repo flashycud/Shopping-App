@@ -12,14 +12,17 @@ Ext.define('ShopApp.view.page.Fav',{
                     {
                         xtype: 'button',
                         docked: 'left',
-                        text: 'Left'
+                        iconCls: 'fav'
                     },
                     {
                         xtype: 'button',
                         docked: 'right',
-                        text: 'Right'
+                        iconCls: 'list'
                     }
-                ]  
+                ],
+
+                // Styling
+                ui: 'header'
             },
             {
                 xtype: 'list',
