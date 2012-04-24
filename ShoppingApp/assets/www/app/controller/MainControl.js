@@ -15,13 +15,9 @@ Ext.define('ShopApp.controller.MainControl',{
 			tab4: '#tab4',
 
 			home: 'homepage',
-			left: 'toolbar button[docked=left]',
-			right: 'toolbar button[docked=right]',
-			homeLeft: 'homepage button[docked=left]',
-			homeRight: 'homepage button[docked=right]',
 			following: 'followingpage',
-			followingLeft: 'followingpage button[docked=left]',
-			followingRight: 'followingpage button[docked=right]',
+			left: 'toolbar button[docked=left]',
+			right: 'toolbar button[docked=right]'
 		},
 
 		control: {
@@ -59,8 +55,12 @@ Ext.define('ShopApp.controller.MainControl',{
 
 	onInit: function(){
 		var main = this.getMain(),
-			mainTab = this.getMainTab(),
-			layout = main.getLayout(),
+			mainTab = this.getMainTab();
+		if(Ext.os.is.Android){
+			main.setActiveItem(mainTab);
+			return;
+		}
+		var layout = main.getLayout(),
 			anim = layout.getAnimation();
 		anim.setReverse(true);
 		main.setActiveItem(mainTab);
