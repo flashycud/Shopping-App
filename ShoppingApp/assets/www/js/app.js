@@ -1,12 +1,7 @@
 // Ext.Loader.setPath({
 //     'Ext': './js'
 // });
-var global = function(){
-	alert('back');
-}
-document.addEventListener('deviceready',function(){
-	document.addEventListener("backbutton", global, false);
-});
+var global2 = [];
 function bind( scope, fn ) {
 		return function() {
 			fn.apply( scope, arguments );
@@ -16,11 +11,11 @@ function bind( scope, fn ) {
 Ext.application({
 	name	: 'ShopApp',
 
-	controllers : ['HomeControl'],
+	controllers : ['MainControl'],
 	views	: [
 		'Main', 'MainTab' ,
 
-		'page.Home', 'page.Map', 'page.Fav', 'page.Shops', 'page.Promo'
+		'page.Home', 'page.Map', 'page.Following', 'page.Shops', 'page.Promo'
 	],
 	
 	phoneStartupScreen: 'img/Homescreen.jpg',

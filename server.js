@@ -3,6 +3,7 @@ var http = require("http"),
     path = require("path"),
     fs = require("fs")
     port = process.argv[2] || 8888,
+    // filepath = process.argv[3] || 'D:\\Works\\Personal\\Shopping-App\\ShoppingApp\\assets\\www';
     filepath = process.argv[3] || '/media/Data/Works/Personal/Shopping-App/ShoppingApp/assets/www';
 
 http.createServer(function(request, response) {
@@ -10,6 +11,7 @@ http.createServer(function(request, response) {
   var uri = url.parse(request.url).pathname
     // , filename = path.join(process.cwd(), uri);
     , filename = path.join(filepath, uri);
+  
   
   path.exists(filename, function(exists) {
     if(!exists) {
@@ -35,5 +37,4 @@ http.createServer(function(request, response) {
     });
   });
 }).listen(parseInt(port, 10));
-
 console.log("Static file server running at\n  => http://localhost:" + port + "/\nCTRL + C to shutdown");

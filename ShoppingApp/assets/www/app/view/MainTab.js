@@ -6,28 +6,35 @@ Ext.define('ShopApp.view.MainTab',{
 		tabBarPosition: 'bottom',
 		items: [
 			{
-				xtype: 'homepage',
+				xtype: 'container',
+				id: 'tab1',
 				title: 'Home',
 	            iconCls: 'home',
 			},
 			{
-				xtype: 'mappage',
+				xtype: 'container',
+				id: 'tab2',
 				title: 'Map',
 				iconCls: 'nav'
 			},
 			{
-				xtype: 'favpage',
-				title: 'Favorites',
+				xtype: 'container',
+				id: 'tab3',
+				title: 'Following',
 				iconCls: 'fav'	
 			},
 			{
-				xtype: 'shopspage',
+				xtype: 'container',
+				id: 'tab4',
 				title: 'Shops',
 				iconCls: 'shop'	
 			}
 		],
 		layout: {
 			animation: false
+		},
+		defaults:{
+			layout: {type: 'card'}
 		},
 
 		// styling

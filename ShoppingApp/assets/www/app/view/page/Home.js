@@ -1,3 +1,20 @@
+// Ext.define('Shop', {
+// 	extend: 'Ext.data.Model',
+// 	fields: ['id', 'key', 'value'],
+// 	proxy: {
+// 		type: 'rest',
+// 		url : 'http://shopping-app.iriscouch.com/shoppingapp/_design/_shoppingapp/_view/all',
+// 		reader: {
+// 			type: 'json',
+// 			root: 'rows'
+// 		}
+// 	}
+// });
+
+// var shopStore = Ext.create('Ext.data.Store', {
+// 	model: 'Shop',
+// 	autoLoad: true
+// });
 Ext.define('ShopApp.view.page.Home', {
 	extend: 'Ext.Container',
 	xtype: 'homepage',
@@ -10,10 +27,10 @@ Ext.define('ShopApp.view.page.Home', {
 				title: 'Siam Square Times',
 				items: [
 					{
-						xtype: 'button',
+						xtype: 'button', 
 						docked: 'left',
 						action: 'left',
-						iconCls: 'fav'
+						iconCls: 'following'
 					},
 					{
 						xtype: 'button',
@@ -26,6 +43,21 @@ Ext.define('ShopApp.view.page.Home', {
 				// Styling
 				ui: 'header'
 			},
+			// {
+			// 	xtype: 'dataview',
+			// 	store: shopStore,
+
+			//     itemTpl: [
+			//     	'<div style="padding:5px">',
+			//     	'id : {id}<br/>',
+			//     	'key : {key}<br/>',
+			//     	'value : {value}<br/>',
+			//     	'value.type : {value.type}<br/>',
+			//     	'value.name : {value.name}<br/>',
+			//     	'</div>'
+			//     ].join("")
+
+			// }
 			{
 				xtype: 'dataview',
 				style:'background:#000;color:#fff',
@@ -36,46 +68,12 @@ Ext.define('ShopApp.view.page.Home', {
 			            {name: 'Rob',   age: 21},
 			            {name: 'Tommy', age: 24},
 			            {name: 'Jacky', age: 24},
+			            {name: 'Ed',   age: 26},
 			            {name: 'Jamie',  age: 100},
 			            {name: 'Rob',   age: 21},
 			            {name: 'Tommy', age: 24},
 			            {name: 'Jacky', age: 24},
-			            {name: 'Jamie',  age: 100},
-			            {name: 'Rob',   age: 21},
-			            {name: 'Tommy', age: 24},
-			            {name: 'Jacky', age: 24},
-			            {name: 'Jamie',  age: 100},
-			            {name: 'Rob',   age: 21},
-			            {name: 'Tommy', age: 24},
-			            {name: 'Jacky', age: 24},
-			            {name: 'Jamie',  age: 100},
-			            {name: 'Rob',   age: 21},
-			            {name: 'Tommy', age: 24},
-			            {name: 'Jacky', age: 24},
-			            {name: 'Jamie',  age: 100},
-			            {name: 'Rob',   age: 21},
-			            {name: 'Tommy', age: 24},
-			            {name: 'Jacky', age: 24},
-			            {name: 'Jamie',  age: 100},
-			            {name: 'Rob',   age: 21},
-			            {name: 'Tommy', age: 24},
-			            {name: 'Jacky', age: 24},
-			            {name: 'Jamie',  age: 100},
-			            {name: 'Rob',   age: 21},
-			            {name: 'Tommy', age: 24},
-			            {name: 'Jacky', age: 24},
-			            {name: 'Jamie',  age: 100},
-			            {name: 'Rob',   age: 21},
-			            {name: 'Tommy', age: 24},
-			            {name: 'Jacky', age: 24},
-			            {name: 'Jamie',  age: 100},
-			            {name: 'Rob',   age: 21},
-			            {name: 'Tommy', age: 24},
-			            {name: 'Jacky', age: 24},
-			            {name: 'Jamie',  age: 100},
-			            {name: 'Rob',   age: 21},
-			            {name: 'Tommy', age: 24},
-			            {name: 'Jacky', age: 24},
+			            {name: 'Ed',   age: 26},
 			            {name: 'Jamie',  age: 100},
 			            {name: 'Rob',   age: 21},
 			            {name: 'Tommy', age: 24},

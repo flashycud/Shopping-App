@@ -12,7 +12,7 @@ Ext.define('ShopApp.view.page.Shops', {
                     {
                         xtype: 'button',
                         docked: 'left',
-                        iconCls: 'fav'
+                        iconCls: 'following'
                     },
                     {
                         xtype: 'button',
