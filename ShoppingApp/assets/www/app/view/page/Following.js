@@ -1,9 +1,51 @@
 Ext.define('ShopApp.view.page.Following',{
-	extend: 'Ext.Container',
+	extend: 'ShopApp.view.Page',
 	xtype: 'followingpage',
 
-	config: {
-		items: [
+	loadDefaultToolbar: function(){
+		this.setItems({
+			xtype: 'toolbar',
+			docked: 'top',
+			title: 'Siam Square Times',
+			items: [
+				{
+					xtype: 'button',
+					docked: 'left',
+					iconCls: 'following'
+				},
+				{
+					xtype: 'button',
+					docked: 'right',
+					iconCls: 'list'
+				}
+			],
+			// Styling
+			ui: 'header'
+		});
+	},
+	loadBackToolbar: function(){
+		this.setItems([{
+			xtype: 'toolbar',
+			docked: 'top',
+			title: 'Siam Square Times',
+			items: [
+				{
+					xtype: 'button',
+					docked: 'left',
+					iconCls: 'back'
+				},
+				{
+					xtype: 'button',
+					docked: 'right',
+					iconCls: 'list'
+				}
+			],
+			// Styling
+			ui: 'header'
+		}]);
+	},
+	loadContent: function(){
+		this.setItems([
 			{
 				xtype: 'list',
 				fullscreen: true,
@@ -26,49 +68,6 @@ Ext.define('ShopApp.view.page.Following',{
 					}
 				}
 			}
-		],
-		layout:{type:'card'}
-	},
-	setDefaultToolbar: function(){
-		this.setItems({
-			xtype: 'toolbar',
-			docked: 'top',
-			title: 'Siam Square Times',
-			items: [
-				{
-					xtype: 'button',
-					docked: 'left',
-					iconCls: 'following'
-				},
-				{
-					xtype: 'button',
-					docked: 'right',
-					iconCls: 'list'
-				}
-			],
-			// Styling
-			ui: 'header'
-		});
-	},
-	setBackToolbar: function(){
-		this.setItems({
-			xtype: 'toolbar',
-			docked: 'top',
-			title: 'Siam Square Times',
-			items: [
-				{
-					xtype: 'button',
-					docked: 'left',
-					iconCls: 'back'
-				},
-				{
-					xtype: 'button',
-					docked: 'right',
-					iconCls: 'list'
-				}
-			],
-			// Styling
-			ui: 'header'
-		});
+		]);
 	}
 });

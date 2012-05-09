@@ -1,20 +1,16 @@
-Ext.define('Shop', {
-	extend: 'Ext.data.Model',
-	fields: ['id', 'key', 'value'],
-	proxy: {
-		type: 'rest',
-		url : 'http://shopping-app.iriscouch.com/shoppingapp/_design/_shoppingapp/_view/all',
-		reader: {
-			type: 'json',
-			root: 'rows'
-		}
-	}
-});
+// Ext.define('Shop', {
+// 	extend: 'Ext.data.Model',
+// 	fields: ['id', 'key', 'value'],
+// 	proxy: {
+// 		type: 'rest',
+// 		url : 'http://shopping-app.iriscouch.com/shoppingapp/_design/_shoppingapp/_view/all',
+// 		reader: {
+// 			type: 'json',
+// 			root: 'rows'
+// 		}
+// 	}
+// });
 
-var shopStore = Ext.create('Ext.data.Store', {
-	model: 'Shop',
-	autoLoad: true
-});
 Ext.define('ShopApp.view.page.Home', {
 	extend: 'Ext.Container',
 	xtype: 'homepage',
@@ -45,7 +41,7 @@ Ext.define('ShopApp.view.page.Home', {
 			},
 			{
 				xtype: 'dataview',
-				store: shopStore,
+				store: 'Shops',
 
 			    itemTpl: [
 			    	'<div style="padding:5px">',
@@ -53,14 +49,16 @@ Ext.define('ShopApp.view.page.Home', {
 			    	'key : {key}<br/>',
 			    	'value : {value}<br/>',
 			    	'value.type : {value.type}<br/>',
-			    	'value.name : {value.name}<br/>',
+			    	'value.shopName : {value.shopName}<br/>',
+			    	'value.shopDescription : {value.shopDescription}<br/>',
+			    	'profileImage : {profileImage}<br/>',
 			    	'</div>'
 			    ].join("")
 
 			}
 			// {
 			// 	xtype: 'dataview',
-			// 	style:'background:#000;color:#fff',
+			// 	// style:'background:#000;color:#fff',
 			// 	  store: {
 			//         fields: ['name', 'age'],
 			//         data: [

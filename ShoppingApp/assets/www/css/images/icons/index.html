@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<style type="text/css">
+	.outer{
+		background:#444;
+		padding:10px;
+	}
+	.test{
+		background-color:#FFF;
+		-webkit-mask-image: url('promo.png');
+		-webkit-mask-size: 2em;
+		/*background-size:100%;*/
+		margin:4px;
+		width:2em;
+		height:2em;
+		position:relative;
+	}
+	.test2{
+		background-color:#444;
+		background-image: url('promo.png');
+		/*-webkit-mask-size: 50px;*/
+		background-size:100%;
+		background-position:50%;margin:4px;
+		width:2em;
+		height:2em;
+	}
+	</style>
+	<div class='outer'>
+	<div class='test'>
+	
+	</div>		
+	</div>
+	<div class='outer'>
+	<div class='test2'>
+	
+	</div>		
+	</div>
+</body>
+</html>

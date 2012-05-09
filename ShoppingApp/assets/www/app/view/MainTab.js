@@ -21,7 +21,7 @@ Ext.define('ShopApp.view.MainTab',{
 				xtype: 'container',
 				id: 'tab3',
 				title: 'Following',
-				iconCls: 'fav'	
+				iconCls: 'following'	
 			},
 			{
 				xtype: 'container',
